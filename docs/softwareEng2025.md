@@ -1,3 +1,8 @@
+---
+layout: page
+title: "softare Eng. lecturet note"
+permalink: /docs/software2025
+---
 # ソフトウェア工学
 ### 目次
 - [ソフトウェア工学](#ソフトウェア工学)
