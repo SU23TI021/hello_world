@@ -6,6 +6,6 @@ layout: home
 title: "ソフトウェア工学 2025"
 ---
 
-# ソフトウェア工学2025
+# ソフトウェア工学 2025
 
-git/gitub演習
+git/github演習
