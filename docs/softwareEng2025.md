@@ -56,6 +56,10 @@ permalink: /docs/software2025
     - [Git](#git)
       - [Gitコマンド](#gitコマンド)
     - [GitHub](#github)
+  - [CI/CD](#cicd)
+    - [CI: Continuous Integration](#ci-continuous-integration)
+    - [CD: Continuous Delivery](#cd-continuous-delivery)
+    - [CI/CDパイプラインのステップ](#cicdパイプラインのステップ)
 
 
 ## 概略
@@ -440,3 +444,19 @@ permalink: /docs/software2025
 - template: 他人のリモートリポジトリを雛形として自分の環境に複製すること．
 - issues: レポジトリに関する問題・課題・バグ・機能追加や質問などを挙げるための機能．
 - projects: issuesを管理するためのテーブル．
+
+## CI/CD
+### CI: Continuous Integration 
+&emsp;コード変更を共有リポジトリに頻繁に統合するプロセス．自動テストとビルドを定期的に実行，バグの早期発見と修正を可能にする．CIの自動化により開発のスムーズな進行を促進する．
+### CD: Continuous Delivery 
+&emsp;コード変更をテスト環境や本番環境に自動的にデプロイするプロセス．自動デプロイメントを組み込，手動操作によるデプロイの必要性を排除，ユーザーフィードバックを迅速に反映可能になる．
+
+### CI/CDパイプラインのステップ
+1. ソース: コード変更をトリガーにワークフローを起動する．
+2. ビルド: ソースコードをコンパイルする．
+3. テスト: 自動テストを実行する．
+4. デプロイ: テスト済みのコードを本番環境にデプロイする．
+5. 検証: デプロイされたアプリケーションの動作を確認する．
+6. モニタリング: 本番環境で継続的に監視する．
+
+GitHubではGitHub Actionを用いてプッシ，プルリクエス，スケジュールなどトリガーにYAMLファイルに定義した複雑なワークフローを自動化できる．例としてはflake8を自動で実行してPythonのコーディングを調べた，Github Pagesを用いてWebページを更新したりできる．
